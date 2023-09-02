@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://cdn.tiny.cloud/1/jfeek0ahbykuyys5q75hxdd6ome9ci97lv20r1faiw5499ov/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+  
+</head>
+<body>
+  <textarea id="mytextarea">
+    Welcome to TinyMCE!
+
+    <h1><strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+        Jay Swaminarayan🙏
+    </strong>
+    </h1>\n<p>&nbsp;</p>\n<p><strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <video style="width: 1044px; height: 522px;" 
+        controls="controls" width="1044" height="522"> 
+        <source src="https://www.swaminarayanbhagwan.org/video/other/view?id=27181"></video></strong>
+    </p>\n<p>&nbsp;</p>\n<p>You are my everything <span style="text-decoration: underline;">
+        <em><strong>Ghanu</strong></em></span>. Love uhhh a lot😘. 
+        Please don't make a distance from me. Stay with me because I can't live without you! 
+        Thank you so much for making my life so beautiful!😊</p>`
+
+
+  </textarea>
+  <script>
+    tinymce.init({
+      selector: 'textarea',
+      plugins: 'ai tinycomments mentions anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount checklist mediaembed casechange export formatpainter pageembed permanentpen footnotes advtemplate advtable advcode editimage tableofcontents mergetags powerpaste tinymcespellchecker autocorrect a11ychecker typography inlinecss',
+      toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table mergetags | align lineheight | tinycomments | checklist numlist bullist indent outdent | emoticons charmap | removeformat',
+      tinycomments_mode: 'embedded',
+      tinycomments_author: 'Author name',
+      mergetags_list: [
+        { value: 'First.Name', title: 'First Name' },
+        { value: 'Email', title: 'Email' },
+      ],
+      ai_request: (request, respondWith) => respondWith.string(() => Promise.reject("See docs to implement AI Assistant")),
+    });
+  </script>
+</body>
+</html>
